@@ -1,0 +1,24 @@
+
+
+SQL injection prevention----->
+
+Validate and Sanitize Input-
+Always validate input types ( integer, email) and length. Laravel makes this easy with form requests or validators.
+
+$request->validate([
+    'email' => 'required|email',
+    'age' => 'nullable|integer',
+]);
+
+Use ORM When Possible
+Frameworks like Laravel provide Eloquent ORM, which abstracts SQL and reduces injection risk dramatically.
+
+
+Admin Login-  amar@gmail.com
+pass-         123456
+
+User Login-  shyam@gmail.com
+
+pass-        123456
+
+URL- http://localhost/mgmts/
